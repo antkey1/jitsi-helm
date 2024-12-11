@@ -331,6 +331,10 @@ jigasi:
   xmpp:
     user: jigasi
     password:
+  
+  transcriber:
+    user: transcriber
+    password:
 
   livenessProbe:
     tcpSocket:
@@ -515,7 +519,7 @@ prosody:
       name: '{{ include "prosody.fullname" . }}-common'
   image:
     repository: jitsi/prosody
-    tag: stable-9646
+    tag: stable-9823
 
   # service:
   #   ports:
